@@ -1,0 +1,932 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"if",
+				"if\tif"
+			],
+			[
+				"remo",
+				"removeItem\t( key: DOMString ): void Storage"
+			],
+			[
+				"us",
+				"userUniqueID"
+			],
+			[
+				"user",
+				"userData"
+			],
+			[
+				"json",
+				"JSON_parse\t( json: string ): any JSON"
+			],
+			[
+				"JSON",
+				"JSON_stringify\t( value: any, replacer?: any, space?: any ): string JSON"
+			],
+			[
+				"QR",
+				"QRCODE"
+			],
+			[
+				"is",
+				"is-fullwidth"
+			],
+			[
+				"f",
+				"fn\tFunction"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"err",
+				"errors"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"pare",
+				"parent_name"
+			],
+			[
+				"jso",
+				"JSON_parse\t( json: string ): any JSON"
+			],
+			[
+				"paret",
+				"parent\t: WindowProxy Window"
+			],
+			[
+				"set",
+				"setItem\t( key: DOMString, value: DOMString ): void Storage"
+			],
+			[
+				"parent_",
+				"parent_type"
+			],
+			[
+				"load",
+				"loadHome"
+			],
+			[
+				"else",
+				"else_if"
+			],
+			[
+				"attr",
+				"attribute"
+			],
+			[
+				"getE",
+				"getElementById\t( elementId: DOMString ): Element Document"
+			],
+			[
+				"e",
+				"errors"
+			],
+			[
+				"sub",
+				"subdist"
+			],
+			[
+				"ful",
+				"full_name_hi"
+			],
+			[
+				"xml",
+				"xmldata"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"each",
+				"forEach"
+			],
+			[
+				"xmld",
+				"xmldata"
+			],
+			[
+				"getI",
+				"getItem\t( key: DOMString ): DOMString Storage"
+			],
+			[
+				"post",
+				"postdata"
+			],
+			[
+				"nav",
+				"navbar-item"
+			],
+			[
+				"navi",
+				"navigator\t: Navigator Window"
+			],
+			[
+				"conso",
+				"console_log"
+			],
+			[
+				"inner",
+				"innerHeight"
+			],
+			[
+				"win",
+				"winHt"
+			],
+			[
+				"getele",
+				"getElementById\t( elementId: DOMString ): Element Document"
+			],
+			[
+				"getel",
+				"getElementById\t( elementId: DOMString ): Element Document"
+			],
+			[
+				"scroll",
+				"scrollAboveKeyboard"
+			],
+			[
+				"nod",
+				"nodeType"
+			],
+			[
+				"node",
+				"nodeType"
+			],
+			[
+				"add",
+				"addEventListener\t( type: DOMString, callback: EventListener, capture?: boolean ): void EventTarget"
+			],
+			[
+				"text",
+				"text3"
+			],
+			[
+				"ip",
+				"inp"
+			],
+			[
+				"lo",
+				"log\tlog"
+			],
+			[
+				"grey",
+				"grey-text"
+			],
+			[
+				"mate",
+				"material-icons"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/App.vue",
+			"settings":
+			{
+				"buffer_size": 2295,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/router/index.js",
+			"settings":
+			{
+				"buffer_size": 558,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/components/Logout.vue",
+			"settings":
+			{
+				"buffer_size": 1077,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/views/Home.vue",
+			"settings":
+			{
+				"buffer_size": 4005,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/views/About.vue",
+			"settings":
+			{
+				"buffer_size": 18298,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "camera.js",
+			"settings":
+			{
+				"buffer_size": 3468,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Snippet: html"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/app/qrscan",
+		"/D/app/qrscan/dist",
+		"/D/app/qrscan/dist/css",
+		"/D/app/qrscan/dist/js",
+		"/D/app/qrscan/src",
+		"/D/app/qrscan/src/components",
+		"/D/app/qrscan/src/router"
+	],
+	"file_history":
+	[
+		"/D/app/qrscan/dist/js/app.a31ae078.js",
+		"/D/app/qrscan/dist/css/app.8706d334.css",
+		"/D/app/qrscan/dist/js/app.71e07e83.js",
+		"/D/app/qrscan/dist/js/app.233d5cfe.js",
+		"/D/app/qrscan/dist/js/chunk-vendors.5931c58b.js",
+		"/D/app/qrscan/dist/css/app.2b1bf602.css",
+		"/D/app/qrscan/dist/js/chunk-vendors.5931c58b.js.map",
+		"/D/app/qrscan/dist/js/app.780ee552.js",
+		"/D/app/qrscan/src/router/index.js",
+		"/D/app/qrscan/dist/favicon.ico",
+		"/D/app/qrscan/camera.js",
+		"/D/app/qrscan/dist/js/app.0a3e6e47.js",
+		"/D/app/qrscan/dist/js/app.fb6a2d1d.js",
+		"/D/app/qrscan/dist/js/app.7873f66c.js",
+		"/D/app/qrscan/dist/js/app.694d9d8b.js",
+		"/D/app/qrscan/dist/js/app.b287c23f.js",
+		"/D/app/qrscan/app.js",
+		"/D/app/qrscan/public/index.html",
+		"/D/app/qrscan/dist/css/app.8fd093db.css",
+		"/D/app/qrscan/dist/js/app.1cfb5b0a.js",
+		"/D/app/qrscan/dist/js/app.416c091a.js",
+		"/D/app/qrscan/dist/index.html",
+		"/D/app/qrscan/vue.config.js",
+		"/D/app/qrscan/src/main.js",
+		"/D/app/qrscan/dist/js/app.5ca3ad34.js",
+		"/D/app/qrscan/dist/css/app.f73e9a2c.css",
+		"/D/app/qrscan/dist/js/app.5ca3ad34.js.map",
+		"/D/app/qrscan/dist/js/app.8904a451.js",
+		"/D/app/qrscan/dist/css/app.9366fca5.css",
+		"/D/app/qrscan/dist/js/app.a906156f.js",
+		"/E/xampp/htdocs/drsolution/workspace/templates/cards/aadhaar/add.php",
+		"/E/xampp/htdocs/drsolution/webapis/aadharcard.php",
+		"/C/Users/vishu/AppData/Local/Temp/fz3temp-2/aadharcard.php",
+		"/C/Users/vishu/AppData/Local/Temp/fz3temp-2/login.php",
+		"/D/app/qrscan/function.js",
+		"/D/app/qrscan/src/components/List.vue",
+		"/D/app/qrscan/src/views/Home.vue",
+		"/D/app/qrscan/package.json",
+		"/D/app/qrscan/src/components/Login.vue",
+		"/D/app/qrscan/dist/css/app.1143b002.css",
+		"/D/app/qrscan/dist/js/app.74e6cd2c.js",
+		"/D/app/qrscan/dist/js/app.b9ab95ef.js",
+		"/D/app/qrscan/dist/js/about.e72fada1.js",
+		"/D/app/qrscan/src/views/About.vue",
+		"/E/xampp/htdocs/drsolution/webapis/login.php",
+		"/D/app/qrscan/node_modules/bulma/package.json",
+		"/D/app/qrscan/src/App.vue",
+		"/D/app/qrscan/src/components/HelloWorld.vue",
+		"/D/app/drsol/css/style.css",
+		"/D/app/qrscan/www/js/index.js",
+		"/D/app/qrscan/www/index.html",
+		"/D/app/drsol/js/app.js",
+		"/D/app/drsol/compass.html",
+		"/D/app/drsol/about.html",
+		"/D/app/drsol/www/index.html",
+		"/D/app/drsol/www/js/index.js",
+		"/E/xampp/htdocs/drsolution/theme2/jeweler-master/images-cropper.html",
+		"/E/xampp/htdocs/drsolution/workspace/plugins/cropper/cropper-actice.js",
+		"/E/xampp/htdocs/drsolution/theme2/workspace/assets/js/cropper/cropper-actice.js",
+		"/E/xampp/htdocs/drsolution/theme2/workspace/assets/js/cropper/cropper.min.js",
+		"/E/xampp/htdocs/drsolution/theme2/workspace/assets/js/plugins.js",
+		"/E/xampp/htdocs/drsolution/theme2/workspace/assets/js/main.js",
+		"/F/download/add-language.php",
+		"/E/xampp/htdocs/story/mobileapp/index.html",
+		"/E/xampp/htdocs/story/index.html",
+		"/E/xampp/htdocs/storyapp/src/main.js",
+		"/E/xampp/htdocs/storyapp/index.html",
+		"/D/app/storyapp/www/dist/build.js",
+		"/E/xampp/htdocs/drsolution/workspace/index.php",
+		"/E/xampp/htdocs/abs-erp/centino-temp/classes/function.php",
+		"/E/xampp/htdocs/wowMobile/wowstoreadmin/error_log",
+		"/E/xampp/htdocs/trashapp/users.json"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"block_hi",
+			"block",
+			"this.xmldata.subdist",
+			"subdist",
+			"xmldata.subdist",
+			"subdist",
+			"progress",
+			"About",
+			"clearData",
+			"full_address",
+			"address_line_hi",
+			"address",
+			"params",
+			"clearData",
+			"this.xmldata",
+			"xmldata",
+			"response",
+			"this.response",
+			"setItem",
+			"response",
+			"imageURI",
+			"userData",
+			"showData",
+			"full_address",
+			"imgName",
+			"base64Photo",
+			"div",
+			"li",
+			"errors",
+			"showData",
+			"submitting",
+			"message",
+			"onclick",
+			"imgPreview",
+			"coInput",
+			"parent_name_hi",
+			"getGender",
+			"submit_data",
+			"gender",
+			"textarea",
+			"imgName",
+			"inputFileToLoad",
+			"data",
+			"var",
+			"submit_data",
+			"lang",
+			"showData",
+			"p",
+			"box",
+			"section",
+			"panel-block",
+			"span",
+			"panel-heading",
+			"panel ",
+			"class=\"card-footer-item\"",
+			"div",
+			"district",
+			"parent_name_hi",
+			"full_name_hi",
+			"fulladdress",
+			"changeLang",
+			"qrdata",
+			"changelang",
+			"change",
+			"address",
+			"full_",
+			"full_add",
+			"fulladdress",
+			"change",
+			"photo",
+			"Shekhpura Kadeem",
+			"span",
+			"this.xmldata",
+			"QRCODE",
+			"Home",
+			"3",
+			"li",
+			"div",
+			"fas",
+			"Home",
+			"HelloWorld"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/App.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2295,
+						"regions":
+						{
+							"col_2C3E50FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1782,
+										1789
+									]
+								],
+								"scope": "col_2C3E50FF"
+							},
+							"col_2C3E50FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_2C3E50FF_circle.png",
+								"regions":
+								[
+									[
+										1771,
+										1771
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_BBBBBBFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1998,
+										2002
+									]
+								],
+								"scope": "col_BBBBBBFF"
+							},
+							"col_BBBBBBFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_BBBBBBFF_circle.png",
+								"regions":
+								[
+									[
+										1965,
+										1965
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_E4E4E4CC":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										2031,
+										2055
+									]
+								],
+								"scope": "col_E4E4E4CC"
+							},
+							"col_E4E4E4CC_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_E4E4E4CC_circle.png",
+								"regions":
+								[
+									[
+										1965,
+										1965
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								2028,
+								2028
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Vuejs Complete Package/vue.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1083.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/router/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 558,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								167,
+								167
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/components/Logout.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1077,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								259,
+								259
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Vuejs Complete Package/vue.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/views/Home.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4005,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3624,
+								3624
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Vuejs Complete Package/vue.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1045.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/views/About.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18298,
+						"regions":
+						{
+							"col_F2F2F2FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										64,
+										77
+									]
+								],
+								"scope": "col_F2F2F2FF"
+							},
+							"col_F2F2F2FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_F2F2F2FF_circle.png",
+								"regions":
+								[
+									[
+										21,
+										21
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								17740,
+								17740
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Vuejs Complete Package/vue.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6792.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "camera.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3468,
+						"regions":
+						{
+							"col_000000FF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1717,
+										1722
+									]
+								],
+								"scope": "col_000000FF"
+							},
+							"col_000000FF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_000000FF_circle.png",
+								"regions":
+								[
+									[
+										1650,
+										1650
+									]
+								],
+								"scope": "col_gutter"
+							},
+							"col_FFFFFFFF":
+							{
+								"flags": 16,
+								"regions":
+								[
+									[
+										1728,
+										1733
+									],
+									[
+										1758,
+										1763
+									]
+								],
+								"scope": "col_FFFFFFFF"
+							},
+							"col_FFFFFFFF_icon":
+							{
+								"flags": 16,
+								"icon": "Packages/User/Color Highlight.cache/col_FFFFFFFF_circle.png",
+								"regions":
+								[
+									[
+										1650,
+										1650
+									]
+								],
+								"scope": "col_gutter"
+							}
+						},
+						"selection":
+						[
+							[
+								2808,
+								2808
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 912.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 41.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "qrscan.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 210.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
