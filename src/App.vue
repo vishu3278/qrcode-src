@@ -14,6 +14,8 @@
             <div class="navbar-menu " v-bind:class="{'is-active': menu}">
                 <div class="navbar-start">
                     <router-link to="/" class="navbar-item"><i class="las la-home"></i> Home </router-link>
+                    <router-link to="/about" class="navbar-item has-text-primary"><i class="las la-qrcode"></i> Scan </router-link>
+                    <router-link to="/manual" class="navbar-item has-text-primary"><i class="las la-edit"></i> Add Card </router-link>
                     <router-link to="/logout" class="navbar-item has-text-info"><i class="las la-user-slash "></i> Logout</router-link>
                     <a onclick="exitApp()" class="navbar-item has-text-danger"><i class="las la-sign-out-alt"></i> Exit</a>
                 </div>
@@ -63,6 +65,7 @@ textarea,
 .button {
     font-family: 'Heebo', sans-serif;
 }
+.button { font-weight:bold; }
 .navbar {border-bottom:1px solid #bbb; box-shadow:0px 0px 0px 8px rgba(228, 228, 228, 0.8);}
 .hero .hero-body {
     padding-top: 1rem;

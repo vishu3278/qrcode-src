@@ -13,12 +13,12 @@
         </div>
         <div v-show="userData">
             <div class="card ">
-                <div class="card-header">
+                <header class="card-header">
                     <p class="card-header-title has-text-primary"> Scan Card</p>
                     <a href="#" class="card-header-icon" aria-label="more options">
-                        <span class="icon"><i class="las la-qrcode"></i></span>
+                        <span class="icon has-text-primary"><i class="las la-qrcode"></i></span>
                     </a>
-                </div>
+                </header>
                 <div class="card-content">
                     <!-- <textarea class="textarea" v-model="qrdata" placeholder="QR code data"></textarea><br> -->
                     <div class="notification is-danger" v-show="errors.length">
@@ -32,6 +32,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
         <div class="box" v-show="!userData">
             <router-link to="/" class="button is-fullwidth is-warning">Login Again</router-link>
@@ -392,6 +393,7 @@ export default {
                 "address_pincode": this.xmldata.pc,
                 "base64Photo": imgData
             })
+            console.log(submit_data);
             axios.post('https://thesupercop.com/webapis/aadharcard.php', submit_data)
                 .then((response) => {
                     if (response.data.status == 1) {

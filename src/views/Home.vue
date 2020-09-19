@@ -36,7 +36,7 @@
                 </p>
                 <!-- <p class="help">{{password}}</p> -->
             </div>
-            <button type="button" v-on:click="login()" v-bind:class="{'is-loading':submitting}" class="button is-link is-fullwidth">Login</button>
+            <button type="button" v-on:click="login()" v-bind:class="{'is-loading':submitting}" class="button is-link is-fullwidth is-uppercase">Login</button>
         </section>
         <!-- <footer class="footer has-background-grey-lighter">
             <div class="content has-text-centered">
