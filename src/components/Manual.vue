@@ -11,20 +11,20 @@
                 <div class="field">
                     <label>Name </label>
                     <div class="control">
-                        <input type="text" class="input is-info" v-model="name">
+                        <input type="text" class="input is-info" v-model="name" required="">
                     </div>
                 </div>
                 <div class="field">
                     <label>नाम </label>
                     <div class="control">
-                        <input type="text" class="input is-info" v-model="full_name_hi">
+                        <input type="text" class="input is-info" v-model="full_name_hi" required="">
                     </div>
                 </div>
                 <label>Parent Type &amp; Name</label>
                 <div class="field has-addons">
                     <div class="control">
                         <span class="select">
-                            <select v-model="parent_type" class="input is-info">
+                            <select v-model="parent_type" class="input is-info" required="">
                                 <option selected="" value="">Type</option>
                                 <option value="C/O">C/O</option>
                                 <option value="D/O">D/O</option>
@@ -34,30 +34,30 @@
                         </span>
                     </div>
                     <div class="control is-expanded">
-                        <input type="text" class="input is-info" v-model="parent_name">
+                        <input type="text" class="input is-info" v-model="parent_name" required="">
                     </div>
                 </div>
                 <div class="field ">
                     <label>माता पिता का नाम (अभिभावक)</label>
                     <div class="control is-expanded">
-                        <input type="text" class="input is-info" v-model="parent_name_hi">
+                        <input type="text" class="input is-info" v-model="parent_name_hi" required="">
                     </div>
                 </div>
                 <div class="field">
                     <label>Address</label>
                     <div class="control">
-                        <textarea class="textarea is-info" v-model="full_address" rows="2"></textarea>
+                        <textarea class="textarea is-info" v-model="full_address" rows="2" required=""></textarea>
                     </div>
                 </div>
                 <div class="field">
                     <label>पता</label>
                     <div class="control">
-                        <textarea class="textarea is-info" v-model="full_address_hi" rows="2"></textarea>
+                        <textarea class="textarea is-info" v-model="full_address_hi" rows="2" required=""></textarea>
                     </div>
                 </div>
                 <div class="field">
                     <label>State (राज्य)</label>
-                    <div class="select">
+                    <div class="select is-fullwidth">
                         <select v-model="stateid" v-on:change="fetchDistrict($event)" class="input is-info " required="">
                             <option value="">Select State</option>
                             <option value="485" data-state="Andaman and Nicobar">
@@ -169,44 +169,57 @@
                                 West Bengal (
                                 पश्चिम बंगाल) </option>
                         </select>
+                        
                     </div>
                 </div>
                 <div class="field">
                     <label>District</label>
                     <div class="control">
-                        <input type="text" class="input is-info" v-model="district">
+                        <div class="select is-fullwidth">
+                            <select class="input is-info" v-model="districtid" v-on:change="fetchBlock($event)">
+                                <option value="" selected="">Select District</option>
+                                <option v-for="(district, index) in districtList" :key="index" :value="district.district_ID" :data-dist="district.district_name" :data-disthindi="district.district_name_hi">{{district.district_name}} ({{district.district_name_hi}})</option>
+                            </select>
+                        </div>
+                        <p class="help is-danger" v-show="districtList.length==0" >No district found</p>
+                        <!-- <input type="text" class="input is-info" v-model="district"> -->
                     </div>
                 </div>
-                <div class="field">
+                <!-- <div class="field">
                     <label>जिला</label>
                     <div class="control">
                         <input type="text" class="input is-info" v-model="district_hi">
                     </div>
-                </div>
+                </div> -->
                 <div class="field">
                     <label>Block</label>
                     <div class="control">
-                        <input type="text" class="input is-info" v-model="block">
+                        <div class="select is-fullwidth">
+                            <select v-model="blockid" class="input is-info" v-on:change="changeBlock($event)">
+                                <option value="" selected="">Select Block</option>
+                                <option v-for="(block, index) in blockList" :key="index" :value="block.block_id" :data-block="block.block_name" :data-blockhindi="block.block_name_hi">{{block.block_name}} ({{block.block_name_hi}})</option>
+                            </select>
+                        </div>
+                        <p class="help is-danger" v-show="blockList.length==0" >No blocks found</p>
+                        <!-- <input type="text" class="input is-info" v-model="block"> -->
                     </div>
                 </div>
-                <div class="field">
+                <!-- <div class="field">
                     <label>खंड</label>
                     <div class="control">
                         <input type="text" class="input is-info" v-model="block_hi">
                     </div>
-                </div>
+                </div> -->
                 <div class="field">
                     <label>Pincode</label>
                     <div class="control">
-                        <input type="number" class="input is-info" v-model="pincode" required="" maxlength="6">
+                        <input type="number" v-on:keyup="validate($event)" class="input is-info" v-model="pincode" required="" minlength="6" maxlength="6">
                     </div>
                 </div>
                 <div class="field">
                     <label>Date of Birth</label>
                     <div class="control">
-                        <!-- <v-calendar  /> -->
                         <v-date-picker :locale="{masks:{title:'MMM YYYY', L:'DD-MM-YYYY'}}" v-model="dob" color="blue" :max-date="new Date()" :input-props="{class:'input is-info'}" is-required />
-                        <!-- <input type="text" class="input is-info" v-model="dob"> -->
                     </div>
                 </div>
                 <div class="field">
@@ -230,7 +243,7 @@
                 </div>
                 <div class="field">
                     <label>Aadhaar Number</label>
-                    <div class="control"><input type="text" class="input is-info" v-model="uid"></div>
+                    <div class="control"><input type="number" class="input is-info" v-model="uid" minlength="12" maxlength="12" required=""></div>
                 </div>
                 <div class="field">
                     <label class="checkbox"><input type="checkbox" v-model="agree" required="required" aria-required="true"> I will be responsible for details entered in this form.</label>
@@ -324,7 +337,7 @@
             </div>
         </div>
         <div class="box">
-            <progress class="progress is-info is-small" v-show="progress>=1" v-bind:value="progress" max="100">{{progress}}%</progress>
+            
             <div class="message is-success" v-if="response">
                 <div class="message-body">
                     <p>{{response.message}}</p>
@@ -352,8 +365,12 @@ export default {
             full_address_hi: '',
             state: '',
             stateid: '',
+            districtList: [],
+            districtid:'',
             district: '',
             district_hi: '',
+            blockList: [],
+            blockid: '',
             block: '',
             block_hi: '',
             pincode: '',
@@ -366,7 +383,6 @@ export default {
             errors: [],
             submitting: false,
             response: '',
-            progress: 0
         }
     },
     mounted: function() {
@@ -383,19 +399,79 @@ export default {
             console.log(formattedDate);
             return formattedDate;
         },
+        
     },
     methods: {
+        validate: function(event){
+            let el = event.target.attributes;
+            console.log(el[1]);
+            /*if (el.value == '') {
+                return "is-danger"
+            } else {
+                return "is-success"
+            }*/
+            return event.target.value;
+        },
         fetchDistrict: function(event) {
             this.state = event.target.selectedOptions[0].dataset.state;
             // console.log(event);
-            let stateData = JSON.stringify({ state: this.state });
-            axios.post('https://thesupercop.com/webapis/stateAjax.php', stateData)
-            .then((response)=>{
-                console.log(response);
-            })
-            .catch((error)=>{
-                console.log(error)
-            })
+            this.districtList=[];
+            this.blockList=[];
+            if (this.stateid) {
+                let stateData = JSON.stringify({ state: this.stateid });
+                axios.post('https://thesupercop.com/webapis/stateAjax.php', stateData)
+                .then((response)=>{
+                    if (response.status == 200) {
+                        // console.log(response);
+                        if (response.data.status == 1) {
+                            console.log(response.data.district)
+                            this.districtList = response.data.district;
+                            // this.stateError.district = '';
+                        }else{
+                            // this.stateError.district = response.data.message
+                        }
+                    }else{
+                        // this.stateError.district = response.statusText;
+                    }
+                })
+                .catch((error)=>{
+                    console.log(error)
+                })
+            }else {
+                // this.stateError.district = ""
+            }
+        },
+        fetchBlock: function(event) {
+            this.district = event.target.selectedOptions[0].dataset.dist;
+            this.district_hi = event.target.selectedOptions[0].dataset.disthindi;
+            this.blockList=[];
+            if (this.districtid) {
+                let districtData = JSON.stringify({ district: this.districtid });
+                axios.post('https://thesupercop.com/webapis/stateAjax.php', districtData)
+                .then((response)=>{
+                    if (response.status == 200) {
+                        // console.log(response);
+                        if (response.data.status == 1) {
+                            console.log(response.data.block)
+                            this.blockList = response.data.block;
+                        }else{
+                            // console.warn(response.data.message)
+                            // this.stateError.block = response.data.message
+                        }
+                    }else{
+                        // this.stateError.block = response.statusText;
+                    }
+                })
+                .catch((error)=>{
+                    console.log(error)
+                })
+            }else {
+                // this.stateError.block = ""
+            }
+        },
+        changeBlock: function(event) {
+            this.block = event.target.selectedOptions[0].dataset.block;
+            this.block_hi = event.target.selectedOptions[0].dataset.blockhindi;
         },
         clearData: function() {
             Object.assign(this.$data, this.$options.data());
@@ -441,14 +517,20 @@ export default {
                 this.full_address_hi = result;
             });
 
-            translate(this.language, this.district).then((result) => {
-                this.district_hi = result;
-            });
-            if (this.block != this.district) {
-                translate(this.language, this.block).then((result) => {
-                    this.block_hi = result;
+            /*if (this.district) {
+                translate(this.language, this.district).then((result) => {
+                    this.district_hi = result;
                 });
             }
+            if (this.block) {
+                if (this.block != this.district) {
+                    translate(this.language, this.block).then((result) => {
+                        this.block_hi = result;
+                    });
+                }else{
+                    this.block_hi = this.district_hi;
+                }
+            }*/
         },
         submitData: function() {
             this.submitting = true;
@@ -470,13 +552,11 @@ export default {
                 "address_state": this.state,
                 "address_district": this.district,
                 "address_district_hi": this.district_hi,
-                "address_block": (this.block != this.district) ? this.block : '',
+                "address_block": this.block,
                 "address_block_hi": this.block_hi,
                 "address_pincode": this.pincode,
                 "base64Photo": imgData
             })
-
-            console.log(submit_data);
 
             axios.post('https://thesupercop.com/webapis/aadharcard.php', submit_data)
                 .then((response) => {
@@ -485,13 +565,9 @@ export default {
                         window.sessionStorage.setItem("response", JSON.stringify(response.data));
                         this.clearData();
                         this.errors = [];
-                        let wait = setInterval(() => {
-                            this.progress += 10
-                            if (this.progress >= 100) {
-                                clearInterval(wait);
-                                // this.$router.push({ name: 'Home' });
-                            }
-                        }, 250);
+                        setTimeout(function() {
+                            this.response = '';
+                        }, 4500)
                     } else {
                         this.submitting = false;
                         this.errors.push(response.data.message);
